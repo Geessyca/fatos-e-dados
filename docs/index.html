@@ -699,7 +699,9 @@ function countarAte(elemento,final,velocidade,velocidade_slow){
                 document.querySelector(elemento).innerHTML = qnt;
             }
             else {
-                var qnt = quantidade.toString().charAt(0) + "." + quantidade.toString().charAt(1);
+                value_init = parseInt(final.toString().split("")[0]) == 0 ? 0 : quantidade.toString().charAt(0)
+                value_decimal = parseInt(final.toString().split("")[0]) == 0 ? quantidade.toString().charAt(0) : quantidade.toString().charAt(1)
+                var qnt = value_init + "." + value_decimal
                 document.querySelector(elemento).innerHTML = qnt;
             }
         }else{
