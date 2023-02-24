@@ -691,7 +691,11 @@ function countarAte(elemento,final,velocidade,velocidade_slow){
         if(decimal == true){
             if (final > 100) {
                 value_decimal = quantidade.toString().charAt(2) == "" ? quantidade.toString().charAt(1) : quantidade.toString().charAt(2)
-                var qnt = quantidade.toString().charAt(0) + quantidade.toString().charAt(1) + "." + value_decimal;
+                value_quant= parseInt(quantidade.toString().charAt(0) + quantidade.toString().charAt(1))
+                value_final = parseInt(final.toString().split("")[0]+ final.toString().split("")[1])
+                value_init = value_quant> value_final? parseInt(value_quant/10):value_quant
+
+                var qnt = value_init + "." + value_decimal;
                 document.querySelector(elemento).innerHTML = qnt;
             }
             else {
