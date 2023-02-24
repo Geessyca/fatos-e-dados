@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets//css/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+</head>
+<body style="background-color: #f5f5f5;">
+    <div class="popup fecharPopup">
+        <div class="popup_video">
+            <div class="fechar fecharPopup">Voltar</div>
+            <div class="video_youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hh0GlxtWqBI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="introducao ">
+        <div class="main">
+            <div class="row" > 
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="h-100 d-flex  align-items-center">
+                        <div class="introducao_texto">
+                            <div class="titulo animar_texto_topo animate__animated">
+                                Fatos & dados sobre o <b>Clube de Autores</b>
+                            </div>
+                            <div class="texto  animar_texto_topo animate__animated">
+                                Fundado em 2009, o Clube de Autores é a <strong>primeira</strong> e <strong>maior</strong> plataforma de autopublicação gratuita de livros, com venda em formatos impresso e digital, no Brasil e América Latina
+                            </div>
+                            <div class="conhece  animar_texto_topo animate__animated">
+                                Conheça mais sobre nós no vídeo:
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="h-100 d-flex  align-items-center justify-content-center">
+                        <div class="video animar_video_direita animate__animated"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="informativo">
+        <div class="main">
+            <div class="row">
+                <div class="col-xl-10 col-lg-12 col-md-12 col-12 offset-xl-1">
+                    <div class="row row_infomativo">
+                        <div class="col-md-4 col-12 coluna animar_esquerda animate__animated ">
+                            <div class="h-100 d-flex  align-items-center justify-content-center">
+                                <div class="info_livros_publicados">
+                                    <div class="contagem">+<b id="livros_publicados">0</b> MIL</div>
+                                    <div class="texto">livros <br>publicados</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 coluna animar_topo animate__animated ">
+                            <div class="h-100 d-flex  align-items-center justify-content-center">
+                                <div class="info_data">
+                                    <div class="data">Desde 2009 já<br>pagamos</div>
+                                    <div class="valor">+R$<b id="data_1">0</b><br>MILHÕES</div>
+                                    <div class="diretos">em direitos<br>autorais</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 coluna animar_direita animate__animated ">
+                            <span class="divider"></span>
+                            <div class="h-100 d-flex  align-items-center justify-content-center">
+                                <div class="info_data">
+                                    <div class="data">Apenas em 2022<br>pagamos</div>
+                                    <div class="valor">+R$<b id="data_2">0</b><br>MILHÕES</div>
+                                    <div class="diretos">em direitos<br>autorais</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="autores_publicados  animate__animated animate__fadeInLeftBig">
+                            <img src="./assets/imgs/grupo.png"><div><span>+<span id="autores_publicados">0</span> MIL</span> AUTORES JÁ PUBLICARAM AQUI</div>
+                        </div>
+                    </div>
+                    <div class="row informativo_locais">
+                        <div class="livrarias_paises col-md-4 col-12 animar_esquerda_livros   animate__animated ">
+                            <div class="texto">Nossos livros já<br> foram entregues em</div>
+                            <div class="quantia"><span id="paises_diferentes">0</span> PAÍSES<br>DIFERENTES</div>
+                        </div>
+                        <div class="livrarias_planeta col-md-3 col-12 p-0 pl-5 animar_planeta_livros animate__animated ">
+                            <img src="./assets/imgs/planeta.png">
+                        </div>
+                        <div class="livrarias_mundo col-md-5 col-12 p-0 animar_direita_livros  animate__animated ">
+                            <div class="texto">Nossos livros são vendios em</div>
+                            <div class="quantia"><span id="livrarias">0</span> LIVRARIAS<br>E MARKETPLACES</div>
+                            <div class="texto">no Brasil e no mundo</div>
+                        </div>
+                    </div>
+                    <div class="row informativo_livros">
+                        <div class="livros animate__animated">
+                            <div class="livros_texto">
+                                <span>Cerca de</span>
+                                <div><span id="novos_livros">0</span> NOVOS LIVROS</div>
+                                <span>são publicados aqui todos os dias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row informativo_livro_pub animate__animated">
+                        <div class="h-100 d-flex  align-items-center justify-content-center">
+                            <div class="item css">
+                                <h2>20%</h2>
+                                <svg width="220" height="230" class="svg_animation" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <circle id="circle" class="circle_animation" r="89.85699" cy="110" cx="110" stroke-width="28" stroke="#5a4b9e" fill="none"/>
+                                    </g>
+                                </svg>
+                                <svg width="220" height="230" class="svg_animation2" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <circle id="circle" class="circle_animations" r="89.85699" cy="110" cx="110" stroke-width="28" stroke="#ffffff" fill="none"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="texto">
+                                de todos os livros publicados<br>em lingua portuguesa em 2022 <span>foram do clube de autores</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="artigos">
+        <div class="main">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-4 p-0" style="background-color: #bf358f;">
+                    <div class="artigo_informativo animate__animated">
+                        <div class="texto">
+                            Saímos
+                            <div id="artigo_contagem">0</div>
+                            vezes na imprensa<br>entre 2009 e 2022<br>em matérias como essa:
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 p-0">
+                    <div class="artigos_slide animate__animated">
+                        <div class="splide">
+                            <div class="splide__track">
+                              <ul class="splide__list" id="artigos">
+
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="curiosidades animate__animated">
+    <div class="main">
+        <div class="row">
+            <div class="curiosidades_titulo">
+                Algumas curiosidades sobre nós
+            </div>
+        </div>
+        <div class="row">
+            <ul class="curiosidades_lista">
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/1.png"></div>
+                    <div>O Clube de Autores foi premiado como plataforma mais inovadora do mundo pela Feira do Livro de Londres</div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/2.png"></div>
+                    <div>Somos a única plataforma do mercado com um Studio de Design para criação de capas 100% personalizadas</div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/3.png"></div>
+                    <div>O Clube é a única plataforma do mercado que vende o ISBN diretamente para os autores durante o processo de publicação dos livro</div>
+                </li>
+                <li>
+                    <div style="width:150px;"><img src="./assets/imgs/curiosidades/4.png"></div>
+                    <div>Somos a única plataforma do mercado com um painel de vendas para autores com recomendações dadas via algoritmo de inteligência artificial</div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/5.png"></div>
+                    <div>Livros do Clube de Autores já foram adaptados para o cinema e até já viraram novela</div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/6.png"></div>
+                    <div>Livros publicados no Clube de Autores já foram finalistas ou venceram cerca mais de 100 diferentes prêmios-incluindo o Jabuti</div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/7.png"></div>
+                    <div>Desde 2011 o Clube e de Autores vende serviços editoriais para todos os autores que desejarem a partir do <a href="www.profissionaisdolivro.com.br">www.profissionaisdolivro.com.br</a></div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/8.png"></div>
+                    <div>Temos um sistema de Compliance Editorial que busca eliminar a publicação de plágios e de livros propagando fake news</div>
+                </li>
+                <li>
+                    <div><img src="./assets/imgs/curiosidades/9.png"></div>
+                    <div>Há 32 livros do Clube na Biblioteca do Congresso Americano, considerada uma das mais importantes coleções de livros do mundo</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="autores ">
+    <div class="main">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 autores_anim animate__animated">
+                <div class="autores_titulo">
+                    O que os autores falam sobre <span>Clube</span>
+                </div>
+                <div class="depoimentos " id="depoimentos">
+
+                </div>
+                <div class="btn_vermais">LEIA MAIS</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publique">
+    <div class="main">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="publique_cont animate__animated">
+                    <div >
+                        <div class="texto">
+                            <span>Faça parte do Clube de Autores,</span>
+                            Publique sua obra agora mesmo
+                        </div>
+                        <a href="https://clubedeautores.com.br/#publish" class="btn_publicar">PUBLICAR LIVRO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var artigos_visualizados = 0;
+    var artigos_limite = 10;
+    var artigos = [];
+    var depoimentos = [];
+    artigos.push({
+        "descricao" :"Clube de Autores desenvolve tecnologia para identificar um potencial best-seller",
+        "foto" : "./assets/artigos/forbes_art1.jpg",
+        "logo" : "./assets/imgs/logo/forbes.png",
+        "branco" : false,
+        "url" : "https://forbes.com.br/forbes-mulher/2020/01/raio-x-do-empreendedorismo-feminino-na-al-mostra-crescimento-e-desafios/"
+    })
+    artigos.push({
+        "descricao" :"Ferramentas de autopublicação libertam autores do domínio das editoras",
+        "foto" : "./assets/artigos/veja_1.jpg",
+        "logo" : "./assets/imgs/logo/veja.png",
+        "branco" : false,
+        "url" : "https://veja.abril.com.br/cultura/ferramentas-de-autopublicacao-libertam-autores-do-dominio-das-editoras/"
+    })
+    artigos.push({
+        "descricao" :"Lançamento de livros por autores independentes cresce 40% durante pandemia",
+        "foto" : "./assets/artigos/folha_2.jpg",
+        "logo" : "./assets/imgs/logo/folha.png",
+        "branco" : false,
+        "url" : "https://www1.folha.uol.com.br/colunas/monicabergamo/2020/05/lancamento-de-livros-por-autores-independentes-cresce-40-durante-pandemia.shtml"
+    })
+    artigos.push({
+        "descricao" :"Plataformas oferecem fontes de renda alternativas a artistas e escritores",
+        "foto" : "./assets/artigos/padrao.jpg",
+        "logo" : "https://statics.estadao.com.br/s2016/portal/logos/logo-estadao-cavalo.svg",
+        "branco" : false,
+        "url" : "https://cultura.estadao.com.br/noticias/geral,plataformas-oferecem-fontes-de-renda-alternativas-a-artistas-e-escritores,70003346132"
+    })
+    artigos.push({
+        "descricao" :"Plataforma Clube de Autores fechou 2020 com aumento de 40% do faturamento e espera crescer até 70% neste ano",
+        "foto" : "./assets/artigos/negocios_1.jpg",
+        "logo" : "https://statics.estadao.com.br/s2016/portal/logos/logo-estadao-cavalo.svg",
+        "branco" : false,
+        "url" : "https://pme.estadao.com.br/noticias/geral,editoras-de-autopublicacao-crescem-em-meio-a-crise-no-mercado-de-livros,70003624237"
+    })
+    artigos.push({
+        "descricao" :"Plataforma Clube de Autores chega a lançar até 1.200 novos títulos por mês.",
+        "foto" : "./assets/artigos/veja_2.jpg",
+        "logo" : "./assets/imgs/logo/veja.png",
+        "branco" : false,
+        "url" : "https://veja.abril.com.br/coluna/radar/publicacao-independente-de-livros-cresce-durante-a-pandemia/"
+    })
+    artigos.push({
+        "descricao" :"Em poucos cliques, o Clube de Autores põe o seu livro à venda nos principais marketplaces do país",
+        "foto" : "./assets/artigos/forbes_art1.jpg",
+        "logo" : "./assets/imgs/logo/draft.png",
+        "branco" : true,
+        "url" : "https://www.projetodraft.com/em-poucos-cliques-o-clube-de-autores-poe-o-seu-livro-a-venda-nos-principais-marketplaces-do-pais/"
+    })
+    artigos.push({
+        "descricao" :"Oito perguntas sobre: o site que permite que você publique seu próprio livro",
+        "foto" : "./assets/artigos/forbes_art1.jpg",
+        "logo" : "./assets/imgs/logo/canaltech.png",
+        "branco" : false,
+        "url" : "https://canaltech.com.br/inovacao/site-publique-seu-proprio-livro-172138/"
+    })
+    artigos.push({
+        "descricao" :"Sites financiam artistas",
+        "foto" : "./assets/artigos/negocios_1.jpg",
+        "logo" : "https://s3.glbimg.com/v1/AUTH_6fe2c04fd96b44a3802fd18cbc408596/assets/themes/epocanegocios/media/logo-epocanegocios_79ea247ca8.svg",
+        "branco" : true,
+        "url" : "https://veja.abril.com.br/coluna/radar/publicacao-independente-de-livros-cresce-durante-a-pandemia/"
+    })
+    artigos.push({
+        "descricao" :"Plataforma de autopublicação de livros fatura R$ 8,5 milhões",
+        "foto" : "./assets/artigos/forbes_art1.jpg",
+        "logo" : "https://s3.glbimg.com/v1/AUTH_6fe2c04fd96b44a3802fd18cbc408596/assets/themes/revistapegn/media/logo-pegn_f091bc63cd.svg",
+        "branco" : true,
+        "url" : "https://revistapegn.globo.com/Startups/noticia/2021/03/plataforma-de-autopublicacao-de-livros-fatura-r-85-milhoes.html"
+    })
+    artigos.push({
+        "descricao" :"Plataforma Clube de Autores fechou 2020 com aumento de 40% do faturamento e espera crescer até 70% neste ano",
+        "foto" : "./assets/artigos/padrao.jpg",
+        "branco" : false,
+        "url" : "https://culturaefutebol.wordpress.com/2021/02/03/clube-de-autores-vende-55-a-mais-em-2020-e-esquenta-o-mercado-de-autopublicacao/"
+    })
+    artigos.push({
+        "descricao" :"Busca por literatura de autoajuda cresce 51% em plataforma no Clube de Autores",
+        "foto" : "./assets/artigos/folha_1.jpg",
+        "logo" : "./assets/imgs/logo/folha.png",
+        "branco" : false,
+        "url" : "https://www1.folha.uol.com.br/colunas/monicabergamo/2021/09/busca-por-literatura-de-autoajuda-cresce-51-em-plataforma-de-autores-independentes.shtml"
+    })
+    for(var i = 0;i < artigos.length;i++){
+        var htmlArtigo = '<li class="splide__slide"><div class="artigo">'
+        htmlArtigo += '<img class="thumb" src="'+artigos[i].foto+'">';
+        if(artigos[i].branco == true){
+            htmlArtigo += '<div class="logo" style="background-color:black;"><img src="'+artigos[i].logo+'"></div>';
+        }else if(artigos[i].logo != undefined){
+            htmlArtigo += '<div class="logo"><img src="'+artigos[i].logo+'"></div>';
+        }
+        htmlArtigo += '<div class="texto">'+artigos[i].descricao+'</div>';
+        htmlArtigo += '<div class="vermais"><a href="'+artigos[i].url+'">LEIA MAIS</a></div></div></li>';
+        document.getElementById("artigos").innerHTML = document.getElementById("artigos").innerHTML+htmlArtigo;
+    }
+    
+    
+    depoimentos.push({
+        "texto" : 'Não é fácil colocarmos nosso confiança em qualquer meio... Aos poucos fui descobrindo que o Clube dos Autores é mais que um meio confiável, é a segurança de um sonho realizado, é a luta pela valorização destes grandes escritores que acabam sendo desvalorizados pela cultura do sexo, samba e futebol! Lancei com todo amor o meu livro de poesias e manifesto "Era Poética", e, além de sentir - me feliz de estar contribuindo para a cultura nacional, estou contente de compartilhar um sonho meu.',
+        "autor" : 'Vanderlan da Silva',
+        "url" : 'https://clubedeautores.com.br/search?what=Delander+Ryber'
+    })
+
+    depoimentos.push({
+        "texto" : 'O Clube de Autores foi fundamental para a realização de um sonho antigo meu: a publicação da história de minha família, a partir de uma pesquisa de mais de dez anos. Em breve publicarei meu terceiro livro, outro projeto antigo, e sou muito grato à equipe pelo profissionalismo, excelente atendimento e sobretudo pela oportunidade de concretizar sonhos.',
+        "autor" : 'Fabio M. Said',
+        "url" : 'https://clubedeautores.com.br/search?what=Fabio+M.+Said'
+    })
+
+    depoimentos.push({
+        "texto" : 'O Clube me deu liberdade para fazer uma literatura a meu gosto - e não à tendência do Mercado - além de me garantir a possibilidade de ser um escritor digno.',
+        "autor" : 'Hiago Rodrigues Reis de Queirós',
+        "url" : 'https://clubedeautores.com.br/search?what=Hiago+Rodrigues+Reis+de+Queiros'
+    })
+    depoimentos.push({
+        "texto" : 'O ritmo acelerado dos tempos atuais demandam soluções criativas que acompanhem esta velocidade. Publicar meu livro no Clube de Autores permitiu a divulgação de minhas teses muito antes do tema se tornar relevante na mídia. O resultado foi a ampliação de minha rede de contatos e o reconhecimento público com o título de "expert" no tema Geração Y. Recomendo a experiência para todos os autores, principalmente os novatos.',
+        "autor" : 'Sidnei Oliveira',
+        "url" : 'https://clubedeautores.com.br/search?what=Sidnei+Oliveira'
+    })
+    depoimentos.push({
+        "texto" : 'Quero PARABENIZAR toda a equipe do Clube de Autores pelo belíssimo trabalho de atendimento, publicação e envio da obra. O livro está muito bonito!',
+        "autor" : 'Eduardo Piereck',
+        "url" : 'https://clubedeautores.com.br/search?what=Eduardo+Piereck'
+    })
+    depoimentos.push({
+        "texto" : 'O Clube de Autores está me ajudando a disseminar importantes conhecimentos básicos sobre o transtorno de personalidade borderline, na forma do livro Sensibilidade à Flor da Pele, permitindo que familiares e especialistas no assunto obtenham uma nova perspectiva, com mais compreensão e compaixão.',
+        "autor" : 'Helena Polak',
+        "url" : 'https://clubedeautores.com.br/search?what=Helena+Polak'
+    })
+    depoimentos.push({
+        "texto" : 'Acabo de receber neste momento, as obras de minha autoria. Estão lindísimos.... Lindísssimos... Lindíssimos! Parabéns pelo trabalho gráfico, apresentação, agilidade e integridade do site. Grata e obrigada pela parceria, que tem se mostrado excelente!',
+        "autor" : 'Ana Maria Leandro',
+        "url" : 'https://clubedeautores.com.br/search?what=Ana+Maria+Leandro'
+    })
+    depoimentos.push({
+        "texto" : 'Recebi meu livro impresso. Muito bom o acabamento e a impressão. O pessoal do Clube de Autores está de parabéns. Nota 10. Um grande abraço pra todos vocês!',
+        "autor" : 'Doriedison Santos',
+        "url" : 'https://clubedeautores.com.br/search?what=Doriedison+Santos'
+    })
+    depoimentos.push({
+        "texto" : 'É com prazer e satisfação que informo a chegada do livro, exatamente no prazo estipulado. A embalagem é bem interessante, mais parece um artigo valioso (o que realmente é, se tratando de um livro) de tão protegido que veio. A impressão ficou excelente. Essa nova modalidade de impressão deve ser expandida ao máximo e enraizada nas mentes dos tradicionais do mercado literário.',
+        "autor" : 'Mario Belo Neto',
+        "url" : 'https://clubedeautores.com.br/search?what=Mario+Belo+Neto'
+    })
+    depoimentos.push({
+        "texto" : 'É com satisfação, que eu venho frisar que quando descobri este site, vi que a oportunidade de realizar o meu sonho, de escrever e publicar o meu livro havia chegado. O efeito de vê-lo publicado, é emocionante. a oportunidade de ver também os demais lançando os seus livros, para os nossos queridos leitores, é coisa de primeira',
+        "autor" : 'Fernando Mesquita',
+        "url" : 'https://clubedeautores.com.br/search?what=Fernando+Mesquita'
+    })
+    depoimentos.push({
+        "texto" : 'Iniciativa inovadora, sintonizada com possibilidades emergentes típicas do mundo cosmopolita e cibernético de nosso tempo, o Clube de Autores abre o mercado editorial para muitos, amplia para outros tantos que já publicam no circuito convencional. E põe por terra a tradicional desculpa de autores inseguros, de que não conseguem publicar. Agora só não publica quem não quer.',
+        "autor" : 'Edvaldo Pereira Lima',
+        "url" : 'https://clubedeautores.com.br/search?what=Edvaldo+Pereira+Lima'
+    })
+    depoimentos.push({
+        "texto" : 'No Clube eu pude realizar meus sonhos! Pude dar vida a estórias guardadas apenas comigo! Durante meses eu busquei orçamentos em editoras e não encontrei um lugar onde eu tivesse condições de publicar os meus livros. Era tudo caro demais e eu já tinha muitos livros escritos e guardados. Seria impossível publicar tudo, até que encontrei o Clube',
+        "autor" : 'Paula R. Cardoso Bruno',
+        "url" : 'https://clubedeautores.com.br/search?what=Paula+R.+Cardoso+Bruno'
+    })
+    depoimentos.push({
+        "texto" : 'O Clube de Autores tem me proporcionado uma grande oportunidade! A divulgação e a oportunidade que oferece ao leitor de adquirir a nossas obras no conforto de sua casa é espetacular! Sem falar na qualidade do material e o fato de não precisar de tiragem mínima para confecção do livro. Por fim, uma porta aberta para os escritores!',
+        "autor" : 'Cristiano Rocha',
+        "url" : 'https://clubedeautores.com.br/search?what=Cristiano+Rocha'
+    })
+
+
+    depoimentos.push({
+        "texto" : 'Acho que o Clube de Autores está revolucionando a ato de escrever no Pais. Ao democratizar o direito à fala escrita o Clube não só estimula as pessoas naquilo que lhes é único (ou seja, a capacidade de criar), como também a interagir neste mundo virtual. Na verdade, o Clube está antecipando o amanhã.',
+        "autor" : 'Edvaldo Pereira Lima',
+        "url" : 'https://clubedeautores.com.br/search?what=Edvaldo+Pereira+Lima'
+    })
+    depoimentos.push({
+        "texto" : 'O Clube de Autores nos propicia vencer a barreira que separa nosso sonho de escrever da realidade da publicação; um sonho que consiste em dividir com os leitores algo de bom que queiramos compartilhar pela escrita. Levando isso a sério e sabendo da importância que tem para nós que escrevemos, o Clube de Autores faz o nosso sonho virar realidade, com profissionalismo, ética e transparência.',
+        "autor" : 'Fábio Mendes Paulino',
+        "url" : 'https://clubedeautores.com.br/search?what=Fabio+Mendes+Paulino'
+    })
+    depoimentos.push({
+        "texto" : 'Quero parabenizar o Clube de Autores por este belo trabalho gráfico e liberdade que dá aos autores de construírem seus livros conforme a criatividade de cada um. O papel é excelente, o acabamento é de altíssima qualidade e a entrega é garantida! Se você está visitando a página porque quer publicar seu livro de maneira original e está indeciso, pode publicar sem medo! Palavra de Autora do Clube de Autores!',
+        "autor" : 'Solange Guimarães',
+        "url" : 'https://clubedeautores.com.br/search?what=Solange+Guimarães'
+    })
+
+    depoimentos.push({
+        "texto" : 'Dou hoje meu testemunho para o site Clube de Autores por sua competência, solidariedade, capacidade criativa, e auxílio constantte a autores desconhecidos que, por essa generosidade e senso do que significa um espaço literário, estão plenamente engajados nesse projeto. Meus agradecimentos.',
+        "autor" : 'Regina Helena Sárapo',
+        "url" : 'https://clubedeautores.com.br/search?what=Regina+Sarapo'
+    })
+
+    depoimentos.push({
+        "texto" : 'No mercado atual, o Clube de Autores é o melhor investimento que um autor pode fazer, seja ele desenhista, músico ou livre pensador, basta reunir seus trabalhos, formatá-los em um livro e expô-los ao público. Pessoalmente tem sido um lugar no qual deposito os meus trabalhos e fico tranquilo, com aquela certeza de que em qualquer parte do mundo alguém terá acesso a eles.',
+        "autor" : 'Sidhney Boreas',
+        "url" : 'https://clubedeautores.com.br/search?what=Sidhney+Boreas'
+    })
+    depoimentos.push({
+        "texto" : 'O Clube dos Autores é um espaço democrático, didático e humanizador para qualquer pessoa que escreva mas não tem um Editor forte e capitalizador como demanda as leis de mercado. Prevalece o verdadeiro talento de um escritor, ser sucesso de vendas com um Editor Executivo forte como padrinho é fácil, diferente de gastar horas de net e esforços em busca de aplainar o seu próprio caminho e alcançar os seus objetivos como escritor. Sou muito grato por ter o Clube de Autores ao meu lado nesta luta em busca do meu lugar ao Sol.',
+        "autor" : 'Gesiel Nunes Machado',
+        "url" : 'https://clubedeautores.com.br/search?what=Gesiel+Nunes+Machado'
+    })
+
+    depoimentos.push({
+        "texto" : 'Estou muito feliz por ter realizado um grande sonho de publicar minha obra literária. O Clube de Autores está de parabéns. Eficiência, qualidade, confiabilidade e garantia de um trabalho muito bem realizado. Obrigado por fazerem de nossos projetos uma grande realidade.',
+        "autor" : 'Léo Otaciano',
+        "url" : 'https://clubedeautores.com.br/search?what=Leo+Otaciano'
+    })
+
+    depoimentos.push({
+        "texto" : 'Eu devo a você Fred e ao Clube de Autores muita coisa, depois que conheci vocês, muitas premiações eu recebi e sei que as Publicações de meus livros me ajudaram muito. Tenho que agradecer pela prestação dos serviços de vocês pela lisura dos profissionais. Muito Obrigado é pouco indico sempre o Clube de Autores e continuarei indicando.',
+        "autor" : 'Nancy Cobo',
+        "url" : 'https://clubedeautores.com.br/search?what=Nancy+Cobo'
+    })
+
+    depoimentos.push({
+        "texto" : 'Gostaria de parabenizar a equipe do Clube de Autores pelo excelente trabalho de acabamento e impressão de meu primeiro livro. Estou muito satisfeito e espero em breve continuar contando com os serviços desta versátil e revolucionária plataforma de autopublicação. O meu muito obrigado a todos!',
+        "autor" : 'Darivan Castro',
+        "url" : 'https://clubedeautores.com.br/search?what=Darivan+Castro'
+    })
+
+    depoimentos.push({
+        "texto" : 'Quero parabenizar toda a equipe pelo ótimo trabalho realizado , pela qualidade do serviço prestado e por permitir que pensadores e escritores desconhecidos possam ter a oportunidade de expor suas obras. Obrigado CLUBE DE AUTORES vocês são nota mil!',
+        "autor" : 'Johny M. Santos',
+        "url" : 'https://clubedeautores.com.br/search?what=Johny+Santos'
+    })
+
+    depoimentos.push({
+        "texto" : 'O Clube de Autores conseguiu superar todas as minhas expectativas: o material é entregue sempre dentro do prazo, o acabamento é excelente e o atendimento, idem! Sinto-me extremamente feliz e segura tendo um parceiro como o Clube de Autores nas minhas aventuras pelas selvas literárias.',
+        "autor" : 'Catarina Muniz',
+        "url" : 'https://clubedeautores.com.br/search?what=Catarina+Muniz'
+    })
+    depoimentos.push({
+        "texto" : 'No Clube de autores, encontrei a forma mais madura de publicar meus livros. Decido tudo, desde o momento de publicar até a forma de divulgar e comercializar, passando pela escolha da "cara" do meu livro/filho, o mais parecido comigo. O Clube de autores é tecnologia com interação plena à moda antiga.',
+        "autor" : 'Maria Dudah Senne',
+        "url" : 'https://clubedeautores.com.br/search?what=Maria+Senne'
+    })
+
+    depoimentos.push({
+        "texto" : 'Recebi meus livros do clube de autores. Obrigada por me ajudarem a realizar o projeto mais demorado e difícil da minha vida. O trabalho de vocês é absolutamente perfeito. O livro ficou lindo! Quero agradecer o atendimento, o acabamento e confecção do livro. Chorei de felicidade ao perceber o cuidado e o profissionalismo que vocês tiveram com minha obra. Maria Dudah Senne autora de ',
+        "autor" : 'Gercino Cunha',
+        "url" : 'https://clubedeautores.com.br/search?what=Gercino+Cunha'
+    })
+
+    depoimentos.push({
+        "texto" : 'Agradeço ao Clube de Autores pela publicação do meu livro de sonetos "Alma & Coração, parabenizo pela excelente iniciativa que vem proporcionar a novos autores na realização de seus trabalhos literários, didáticos ou de qualquer natureza impressa e parabenizo pelo apoio nas minhas dúvidas correlacionadas a publicação, desde já passarei a divulgar com prazer o referido site. Abraços a todos da equipe do Clube de Autores.',
+        "autor" : 'Nadia Virginia',
+        "url" : 'https://clubedeautores.com.br/search?what=Nadia+Virginia'
+    })
+
+
+    depoimentos.push({
+        "texto" : 'Quero agradecer aqui ao Clube de Autores por seu cuidado no envio dos livros. Todos chegaram no tempo certo! E a embalagem? Nossa! Muito bem embalados, parecendo um bem mais precioso e são, em se tratando de um livro. Ou melhor, o meu livro editado! Quero agradecer também pela pontualidade com que meus leitores estão recebendo seus livros. Estou muito satisfeita com o Clube. Obrigada a todos!',
+        "autor" : 'Rosane Silveira',
+        "url" : 'https://clubedeautores.com.br/search?what=Rosane+Silveira'
+    })
+
+    depoimentos.push({
+        "texto" : 'Quero agradecer toda equipe do Clube de Autores, pelo trabalho maravilhoso desde o incentivo a publicação, acabamento, impressão e principalmente carinho e atenção. Estou muito realizada pela oportunidade de ter divulgado meu primeiro livro nesta plataforma. Parabéns Clube de Autores !',
+        "autor" : 'Tatiane Helena Capasso',
+        "url" : 'https://clubedeautores.com.br/search?what=Tatiane+Helena+Capasso'
+    })
+    /*
+    depoimentos.push({
+        "texto" : '',
+        "autor" : '',
+        "url" : ''
+    })
+    */
+    
+    function ver_artigos(){
+        console.log(artigos_visualizados,artigos_limite)
+        for(var i = artigos_visualizados;i < artigos_limite;i++){
+            if(depoimentos[i] == undefined){
+                document.querySelector(".btn_vermais").remove();
+                return;
+            }
+            var htmlDepoimentos = '<div class="depoimento"><div class="texto">"';
+            htmlDepoimentos += depoimentos[i].texto;
+            htmlDepoimentos += '"</div><a class="autor" href="'+depoimentos[i].url+'">'+depoimentos[i].autor+'</a>';
+            document.getElementById("depoimentos").innerHTML = document.getElementById("depoimentos").innerHTML+htmlDepoimentos;
+            artigos_visualizados++;
+        }
+    }
+    ver_artigos();
+    var btnVerMais = document.querySelector(".btn_vermais");
+    btnVerMais.addEventListener('click',function(e){
+        artigos_limite += 10;
+        ver_artigos();
+    },false)
+    
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+
+    var body = document.body,
+    html = document.documentElement;
+    body.addEventListener("click",function(ev){
+        if(ev.target.classList.contains('fecharPopup')){
+            document.querySelector(".popup").style.display = "none";
+            var iframe = document.querySelector(".popup iframe");
+            iframe.src = iframe.src;
+        }
+    },
+    false);
+    var ver_video = document.querySelector(".video");
+    ver_video.addEventListener('click',function(ev){
+        document.querySelector(".popup").style.display = 'flex';
+    },
+    false)
+    var height_page = Math.max( body.scrollHeight, body.offsetHeight, 
+     html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+    const height = window.innerHeight|| document.documentElement.clientHeight|| 
+    document.body.clientHeight;
+    console.log(height_page)
+
+    var getElemDistance = function ( elem ) {
+        var location = 0;
+        if (elem.offsetParent) {
+            do {
+                location += elem.offsetTop;
+                elem = elem.offsetParent;
+            } while (elem);
+        }
+        return location >= 0 ? location : 0;
+    };
+    var myScrollFunc = function() {
+      var y = window.scrollY;
+      var divisao = height/2.1;
+  if(y <= getElemDistance(document.querySelector(".informativo"))){ // Animar inicio
+    document.querySelector(".introducao .titulo.animar_texto_topo").style.visibility = "visible";
+    document.querySelector(".introducao .texto.animar_texto_topo").style.visibility = "visible";
+    document.querySelector(".introducao .conhece.animar_texto_topo").style.visibility = "visible";
+    document.querySelector(".introducao .animar_video_direita").style.visibility = "visible";
+    document.querySelector(".introducao .titulo.animar_texto_topo").classList.add("animate__fadeInDownBig");
+    document.querySelector(".introducao .texto.animar_texto_topo").classList.add("animate__fadeInDownBig");
+    document.querySelector(".introducao .conhece.animar_texto_topo").classList.add("animate__fadeInDownBig");
+    document.querySelector(".introducao .animar_video_direita").classList.add("animate__fadeInRightBig");
+}
+  if(y >= getElemDistance(document.querySelector(".informativo"))-divisao){ // Animar inicio
+    if(document.querySelector(".informativo .animar_esquerda").classList.contains("animate__fadeInDownBig") == false){
+        countarAte("#livros_publicados",80,20,120);
+        countarAte("#data_1",17.2,20,120);
+        countarAte("#data_2",2.2,20,120);
+        countarAte("#autores_publicados",58,20,120);
+        countarAte("#paises_diferentes",12,20,120);
+        countarAte("#livrarias",14,20,120);
+        document.querySelector(".informativo .animar_esquerda").style.visibility = "visible";
+        document.querySelector(".informativo .animar_topo").style.visibility = "visible";
+        document.querySelector(".informativo .animar_direita").style.visibility = "visible";
+        document.querySelector(".informativo .animar_esquerda").classList.add("animate__fadeInDownBig");
+        document.querySelector(".informativo .animar_topo").classList.add("animate__fadeInDownBig");
+        document.querySelector(".informativo .animar_direita").classList.add("animate__fadeInRightBig");
+    }
+} 
+  if(y >= getElemDistance(document.querySelector(".informativo"))-divisao){ // Animar inicio
+    if(document.querySelector(".informativo .animar_esquerda_livros").classList.contains("animate__fadeInDownBig") == false){
+        document.querySelector(".informativo .animar_esquerda_livros").style.visibility = "visible";
+        document.querySelector(".informativo .animar_planeta_livros").style.visibility = "visible";
+        document.querySelector(".informativo .animar_direita_livros").style.visibility = "visible";
+
+        document.querySelector(".informativo .animar_esquerda_livros").classList.add("animate__fadeInDownBig");
+        document.querySelector(".informativo .animar_planeta_livros").classList.add("animate__fadeInDownBig");
+        document.querySelector(".informativo .animar_direita_livros").classList.add("animate__fadeInRightBig");
+    }
+}
+
+  if(y >= getElemDistance(document.querySelector(".livrarias_planeta"))-divisao){ // Animar inicio
+    if(document.querySelector(".informativo .livros").classList.contains("animate__fadeInDownBig") == false){
+        countarAte("#novos_livros",80,20,120);
+        document.querySelector(".informativo .livros").style.visibility = "visible";
+        document.querySelector(".informativo .informativo_livro_pub").style.visibility = "visible";
+        document.querySelector(".informativo .livros").classList.add("animate__fadeInDownBig");
+        document.querySelector(".informativo .informativo_livro_pub").classList.add("animate__fadeInRightBig");
+    }
+}
+
+
+
+  if(y >= getElemDistance(document.querySelector(".informativo_livro_pub"))-divisao){ // Animar inicio
+    if(document.querySelector(".artigos .artigo_informativo").classList.contains("animate__backInLeft") == false){
+        countarAte("#artigo_contagem",3678,0.00000000000000000000000000000000000000000000000000000000000000000000000011,000000000000000000000000000000000000000000000000000000000000000000001);
+        document.querySelector(".artigos .artigo_informativo").style.visibility = "visible";
+        document.querySelector(".artigos .artigos_slide").style.visibility = "visible";
+        document.querySelector(".artigos .artigo_informativo").classList.add("animate__backInLeft");
+        document.querySelector(".artigos .artigos_slide").classList.add("animate__backInRight");
+    }
+}
+
+  if(y >= getElemDistance(document.querySelector(".curiosidades"))-divisao){ // Animar inicio
+    if(document.querySelector(".curiosidades").classList.contains("animate__fadeInRightBig") == false){
+        document.querySelector(".curiosidades").style.visibility = "visible";
+        document.querySelector(".curiosidades").classList.add("animate__fadeInRightBig");
+    }
+}
+    if(y >= getElemDistance(document.querySelector(".row_infomativo"))-divisao){ // Animar inicio
+        if(document.querySelector(".autores_publicados").classList.contains("animate__fadeInRightBig") == false){
+            document.querySelector(".autores_publicados").style.visibility = "visible";
+            document.querySelector(".autores_publicados").classList.add("animate__fadeInRightBig");
+        }
+    }
+
+    
+    
+    if(y >= getElemDistance(document.querySelector(".autores_anim"))-divisao){ // Animar inicio
+        if(document.querySelector(".autores_anim").classList.contains("animate__backInDown") == false){
+            document.querySelector(".autores_anim").style.visibility = "visible";
+            document.querySelector(".autores_anim").classList.add("animate__backInDown");
+        }
+    }
+
+    if(y >= getElemDistance(document.querySelector(".publique_cont"))-divisao){ // Animar inicio
+        if(document.querySelector(".publique_cont").classList.contains("animate__backInLeft") == false){
+            document.querySelector(".publique_cont").style.visibility = "visible";
+            document.querySelector(".publique_cont").classList.add("animate__backInLeft");
+        }
+    }
+
+};
+myScrollFunc();
+window.addEventListener("scroll", myScrollFunc);
+
+
+function countarAte(elemento,final,velocidade,velocidade_slow){
+    var decimal = false;
+    if(final.toString().indexOf(".") == -1 == false){
+        decimal  = true;
+        final = final.toString().replace(".","");
+    }
+    var quantidade = 0;
+    var funcao = function() {
+        if(quantidade >= final){
+            return;
+        }
+        if(quantidade >= (final)-10 && quantidade < final){
+            velocidade = velocidade_slow;
+        }
+        quantidade++;
+        if(decimal == true){
+            if (final > 100) {
+                value_decimal = quantidade.toString().charAt(2) == "" ? quantidade.toString().charAt(1) : quantidade.toString().charAt(2)
+                var qnt = quantidade.toString().charAt(0) + quantidade.toString().charAt(1) + "." + value_decimal;
+                document.querySelector(elemento).innerHTML = qnt;
+            }
+            else {
+                var qnt = quantidade.toString().charAt(0) + "." + quantidade.toString().charAt(1);
+                document.querySelector(elemento).innerHTML = qnt;
+            }
+        }else{
+            if(final >= 1000){
+                var texto = quantidade;
+                if(quantidade >= 1000){
+                 document.querySelector(elemento).innerHTML = quantidade.toString().charAt(0)+"."+quantidade.toString().charAt(1)+quantidade.toString().charAt(2)+quantidade.toString().charAt(3);
+             }else{
+                document.querySelector(elemento).innerHTML = quantidade;
+            }
+        }else{
+            document.querySelector(elemento).innerHTML = quantidade;
+
+        }
+    }
+    setTimeout(funcao, velocidade);
+}
+setTimeout(funcao, velocidade);
+
+}
+
+const width  = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth;
+var quantidade = 0;
+if(width <= 700 && width > 450){
+ quantidade = 2;
+}else if(width <= 450){
+ quantidade = 1;
+}else{
+ quantidade = 3;
+}
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: quantidade,
+  perMove: 1,
+} );
+
+splide.mount();
+</script>
+</body>
+</html>
